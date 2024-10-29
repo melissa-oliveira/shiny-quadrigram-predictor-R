@@ -6,7 +6,7 @@ library(SnowballC)
 library(text2vec)
 
 # Carregar base de quadrigramas classificados
-df <- read_excel("./data_set_PEJ.xlsx") 
+df <- read_excel("./src/data/data_set_PEJ.xlsx") 
 df$DOMINIO_l <- as.factor(ifelse(df$DOMINIO == "APRENDIZAGEM", 0, 
                                  ifelse(df$DOMINIO == "ENTRETENIMENTO", 1,
                                         ifelse(df$DOMINIO == "ESTETICA", 2, 3))))
@@ -59,5 +59,5 @@ conf_matrix <- confusionMatrix(test_pred, test_data$DOMINIO_l)
 print(conf_matrix)
 
 # Salvar o modelo e o vectorizador
-saveRDS(rnd_mdl, "random_forest_model.rds")
-saveRDS(vectorizer, "tfidf_vectorizer.rds")
+saveRDS(rnd_mdl, "./src/models/random_forest_model.rds")
+saveRDS(vectorizer, "./src/models/tfidf_vectorizer.rds")
