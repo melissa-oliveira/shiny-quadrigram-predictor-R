@@ -1,0 +1,13 @@
+name: shiny-quadrigram-predictor-R
+title: shiny-quadrigram-predictor-R
+username: melissa-oliveira
+account: melissa-oliveira
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13091859
+bundleId: 9285388
+url: https://melissa-oliveira.shinyapps.io/shiny-quadrigram-predictor-R/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/data_set_PEJ.xlsx|models/data_set_PEJ.xlsx
